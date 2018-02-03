@@ -1,0 +1,17 @@
+{
+
+  "description": "Adds a copy button to inputs on webpage",
+  "manifest_version": 2,
+  "name": "Copy-Input",
+  "version": "1.0",
+  "homepage_url": "https://github.com/lavi061997/Copy-Input",
+
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.mozilla.org/*"],
+      "js": ["copy-input.js"]
+    }
+  ]
+
+}
