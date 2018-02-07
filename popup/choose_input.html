@@ -8,15 +8,32 @@
 
 <body>
   <div id="popup-content">
-    <div class="button beast">Frog</div>
-    <div class="button beast">Turtle</div>
-    <div class="button beast">Snake</div>
-    <div class="button reset">Reset</div>
-  </div>
-  <div id="error-content" class="hidden">
-    <p>Can't beastify this web page.</p><p>Try a different page.</p>
+    <div class="button beast image">image</div>
+    <div class="button beast input">input</div>
   </div>
   <script src="choose_input.js"></script>
 </body>
+<style media="screen">
+html, body {
+  width: 100px;
+}
 
+
+.button {
+  margin: 3% auto;
+  padding: 4px;
+  text-align: center;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.beast:hover {
+  background-color: #CFF2F2;
+}
+
+.beast {
+  background-color: #E5F2F2;
+}
+
+</style>
 </html>

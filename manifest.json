@@ -6,11 +6,20 @@
   "version": "1.0",
   "homepage_url": "https://github.com/lavi061997/Copy-Input",
 
+  "permissions": [
+      "activeTab"
+  ],
+  "browser_action": {
+    "browser_style": true,
+    "default_icon": "icons/beasts-32.png",
+    "default_title": "copy-input",
+    "default_popup": "popup/choose_input.html"
+  },
 
   "content_scripts": [
     {
       "matches": ["*://*.mozilla.org/*"],
-      "js": ["copy-input.js"]
+      "js": ["/content_scripts/copy-input.js"]
     }
   ]
 
